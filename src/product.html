@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Главная страница</title>
+        {% include 'templates/head.html' %}
+    </head>
+    <body>
+        <div class="main">
+            {% include 'templates/header.html' %}
+
+            <section>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div id="cardInfo">
+                            <div class="card-l">
+                                <div class="card-l__images"><img id="cardImg" src="/img/img_prod.jpg" alt="" class=""></div>
+                                <div class="card-l__thumbnails">
+                                    <div id="prevSlide">
+                            &lt;-</div>
+                                    <div id="nextSlide">-&gt;</div>
+
+                                    <div class="thumbnails__container">
+                                        <div id="cardImages"></div>
+                                    </div>
+                                </div>
+                                <div class="card-l__footer">
+                                    <button type="button" class="btn btn-primary w-100">
+    Заказать
+  </button>
+                                </div>
+
+                            </div>
+
+                            <div class="card-r">
+                                <div class="card-r__label">
+
+                                    <h2 id="cardTitle">Заголовок</h2>
+                                </div>
+
+                                <div class="card-r__desc" id="cardDescription"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            {% include 'templates/footer.html' %}
+        </div>
+    </body>
+</html>

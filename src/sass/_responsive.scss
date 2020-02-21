@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+
+}
+
+.container {
+    max-width: $max-width-container;
+    margin: 0 auto;
+    padding: 0 $gutters;
+    width: 100%;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 #{-$gutters};
+
+}
+
+.col-12 {
+    width: calc(100% - #{$gutters*2});
+}
+
+.col {
+    box-sizing: border-box;
+    padding: $gutters;
+}
+
+.col-6 {
+    width: calc(50% - #{$gutters*2});
+
+    @include mq(max $BP-mobile) {
+        width: calc(100% - #{$gutters});
+    }
+}
+
+
+
+
+.col-3 {
+    width: 25%;
+
+}
+
+.col-m-1 {
+    width: 100%;
+}
+
+
+.col-4 {
+    width: 33.333%;
+
+}
+
+.p-2 {
+    padding: 20px;
+}

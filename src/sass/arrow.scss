@@ -1,0 +1,25 @@
+.arrow {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 10px);
+
+
+
+    &:after {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url('/img/arrow.svg');
+        background-repeat: no-repeat;
+
+
+
+
+
+    }
+}
