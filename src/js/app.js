@@ -11,7 +11,7 @@ window.onscroll = function() {
 function scrollFunction() {
   if (
     document.body.scrollTop > 180 ||
-    document.documentElement.scrollTop > 580
+    document.documentElement.scrollTop > 180
   ) {
     document.getElementById('navbar').classList.add('nav--fixed');
     document.getElementById('space-navbar-fixed').style.marginTop = '94px';

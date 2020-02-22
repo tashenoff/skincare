@@ -14,5 +14,16 @@
             bottom: 20%;
         }
 
+        &--white {
+            &::after {
+
+                background-color: #fff;
+
+            }
+        }
+
     }
+
+
+
 }

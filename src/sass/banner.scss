@@ -41,9 +41,9 @@
 
         ul {
             padding: 0;
-            margin: 40px;
-            line-height: 2.5rem;
-            font-size: 20px;
+            margin: 40px 18px;
+            line-height: 1.5rem;
+            // font-size: 20px;
         }
     }
 
@@ -51,17 +51,29 @@
 
     &--bottom {
 
-
         color: $primary;
         height: 60vh;
     }
 
+    &--product {
+
+        color: #fff;
+        height: 40vh;
+        background: rgb(107, 166, 234);
+        background: linear-gradient(90deg, rgba(107, 166, 234, 1) 35%, rgba(78, 225, 255, 1) 100%);
+
+        p {
+            padding-bottom: $gutters*5;
+            ;
+        }
+    }
 
     &--landing {
 
-        color: #000;
+        color: #fff;
         height: 50vh;
-        background-color: rgba(0, 0, 0, 0.1);
+        background: rgb(107, 166, 234);
+        background: linear-gradient(90deg, rgba(107, 166, 234, 1) 35%, rgba(78, 225, 255, 1) 100%);
 
         p {
 
@@ -70,9 +82,10 @@
     }
 
     &--cat {
-        color: #000;
+        color: #fff;
         height: 20vh;
-        background-color: rgba(114, 106, 106, 0.1);
+        background: rgb(107, 166, 234);
+        background: linear-gradient(90deg, rgba(107, 166, 234, 1) 35%, rgba(78, 225, 255, 1) 100%);
 
     }
 
