@@ -30,6 +30,18 @@
             box-shadow: none;
         }
 
+        &--ul-margin-none {
+
+
+            ul {
+                padding: 0;
+                margin: 0;
+                // line-height: 1.5rem;
+                // font-size: 20px;
+            }
+
+        }
+
     }
 
 
@@ -42,10 +54,15 @@
 
     }
 
+
+
     &__size {
         list-style: none;
         display: flex;
         font-weight: bold;
+
+
+
 
         li {
             padding-left: 20px;
