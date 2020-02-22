@@ -25,6 +25,15 @@
     width: 100%;
     position: relative;
 
+    &__anima {
+        background: linear-gradient(142deg, #6ba6ea, #4ee1ff);
+        background-size: 400% 400%;
+
+        -webkit-animation: AnimationName 5s ease infinite;
+        -moz-animation: AnimationName 5s ease infinite;
+        animation: AnimationName 5s ease infinite;
+    }
+
 
     &__content {
         margin: 20px 0px;
@@ -56,11 +65,12 @@
     }
 
     &--product {
-
+        @extend .banner__anima;
         color: #fff;
         height: 40vh;
-        background: rgb(107, 166, 234);
-        background: linear-gradient(90deg, rgba(107, 166, 234, 1) 35%, rgba(78, 225, 255, 1) 100%);
+
+
+
 
         p {
             padding-bottom: $gutters*5;
@@ -72,8 +82,7 @@
 
         color: #fff;
         height: 50vh;
-        background: rgb(107, 166, 234);
-        background: linear-gradient(90deg, rgba(107, 166, 234, 1) 35%, rgba(78, 225, 255, 1) 100%);
+        @extend .banner__anima;
 
         p {
 
@@ -84,8 +93,7 @@
     &--cat {
         color: #fff;
         height: 20vh;
-        background: rgb(107, 166, 234);
-        background: linear-gradient(90deg, rgba(107, 166, 234, 1) 35%, rgba(78, 225, 255, 1) 100%);
+        @extend .banner__anima;
 
     }
 
