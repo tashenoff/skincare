@@ -1,10 +1,9 @@
 @import '_mixins';
-@import "./node_modules/mq-scss/mq"; //шаги
+@import "./node_modules/mq-scss/mq";
 @import '_variables';
 @import '_animations';
 @import '_responsive';
 @import 'buttons';
-@import 'banner';
 @import 'card';
 @import 'about';
 @import 'footer';
@@ -26,6 +25,7 @@
 @import 'arrow';
 @import 'product';
 @import 'animations';
+@import '_banner';
 
 
 

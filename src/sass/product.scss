@@ -15,7 +15,7 @@
         padding: $gutters;
         margin: 0 0 $gutters 0;
         box-shadow: 0px 0px 8px rgba(8, 35, 48, 0.16);
-        border-radius: 8px;
+        border-radius: $border-radius-base;
 
         ul {
             padding: 0;
@@ -86,7 +86,7 @@
         position: relative;
         z-index: 1;
         background-color: white;
-        border-radius: 8px;
+        border-radius: $border-radius-base;
 
 
         ul {
