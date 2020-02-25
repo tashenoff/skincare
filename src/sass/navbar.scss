@@ -1,6 +1,6 @@
 .nav {
 
-  z-index: 2;
+  z-index: 3;
   position: relative;
   transition: all ease-in-out 0.2s;
   // position: fixed;
@@ -81,7 +81,9 @@
     // transition: all 0.2s ease-in-out;
     position: relative;
 
-
+    a {
+      transition: all ease-in-out 0.2s;
+    }
 
     &:hover {
       a {
@@ -96,6 +98,7 @@
     text-transform: uppercase;
     text-decoration: none;
     font-size: 16px;
+    font-weight: 700;
 
   }
 }

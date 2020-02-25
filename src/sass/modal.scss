@@ -1,103 +1,95 @@
 .modal {
+  position: fixed;
+  top: 20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  visibility: hidden;
+  overflow: hidden;
+  outline: 0;
 
-    position: fixed;
+  &__field {
+    margin: 6px 0px;
+    display: block;
+  }
+
+  &--fade {
+    opacity: 0;
+    top: 0;
+    // transition: opacity .34s linear;
+    transition: top 0.2s;
+  }
+
+  &--is-visible {
+    visibility: visible;
     top: 20%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1050;
-    visibility: hidden;
-    overflow: hidden;
+    opacity: 3;
+  }
+
+  &__dialog {
+    left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 500px;
+    margin: 1.75rem auto;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
     outline: 0;
+  }
 
-    &--fade {
+  &__header {
+    display: -ms-flexbox;
+    display: flex;
 
-        opacity: 0;
-        top: 0;
-        // transition: opacity .34s linear;
-        transition: top .20s;
-    }
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+  }
 
-    &--is-visible {
-        visibility: visible;
-        top: 20%;
-        opacity: 3;
+  &__title {
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
 
-    }
+  &__body {
+    position: relative;
 
+    flex: 1 1 auto;
+    padding: 1rem;
+  }
 
-
-    &__dialog {
-
-        left: auto;
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 500px;
-        margin: 1.75rem auto;
-
-    }
-
-    &__content {
-
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        pointer-events: auto;
-        background-color: #fff;
-        background-clip: padding-box;
-        border-radius: .3rem;
-        outline: 0;
-    }
-
-    &__header {
-        display: -ms-flexbox;
-        display: flex;
-
-        align-items: flex-start;
-        ;
-
-        justify-content: space-between;
-        padding: 1rem;
-        border-bottom: 1px solid #e9ecef;
-        border-top-left-radius: .3rem;
-        border-top-right-radius: .3rem;
-    }
-
-    &__title {
-        margin-bottom: 0;
-        line-height: 1.5;
-    }
-
-    &__body {
-        position: relative;
-
-        flex: 1 1 auto;
-        padding: 1rem;
-    }
-
-    &__footer {
-
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding: 1rem;
-        border-top: 1px solid #e9ecef;
-    }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #e9ecef;
+  }
 }
 
 .modal-open {
-    overflow: hidden;
-
+  overflow: hidden;
 }
 
 #bg_layer {
-    position: fixed;
-    z-index: 15;
-    width: 100%;
-    height: 100vh;
-    background: #000;
-    opacity: 0.5;
-    display: none;
-
+  position: fixed;
+  z-index: 15;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  opacity: 0.5;
+  display: none;
 }

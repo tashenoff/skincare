@@ -6,6 +6,7 @@ var menu = document.getElementById('navbar');
 var close = document.getElementById('close');
 var open = document.getElementById('modal-open');
 var shadow = document.getElementById('example');
+var bgLayer = document.getElementById('bg_layer');
 
 // var body = document.body;
 
@@ -37,3 +38,9 @@ function closeFunction() {
   document.body.classList.remove('modal-open');
   document.getElementById('bg_layer').removeAttribute('style');
 }
+
+bgLayer.onclick = function() {
+  modal.classList.remove('modal--is-visible');
+  document.body.classList.remove('modal-open');
+  document.getElementById('bg_layer').removeAttribute('style');
+};
