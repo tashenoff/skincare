@@ -28,7 +28,8 @@
 }
 
 .col-6 {
-    width: calc(50% - #{$gutters*2});
+    // width: calc(50% - #{$gutters*2});
+    width: 50%;
 
     @include mq(max $BP-mobile) {
         width: calc(100% - #{$gutters});
@@ -52,6 +53,10 @@
 
 .col-4 {
     width: 33.333%;
+
+    @include mq(max $BP-mobile) {
+        width: calc(100% - #{$gutters});
+    }
 
 }
 

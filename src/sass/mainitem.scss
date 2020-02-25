@@ -105,11 +105,15 @@
 
     img {
       display: block;
-      width: 100%;
+
       object-fit: cover;
       object-position: center;
       max-height: 258px;
       min-height: 258px;
+
+      @include mq(max $BP-mobile) {
+        width: 100%;
+      }
     }
   }
 
