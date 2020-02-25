@@ -86,7 +86,7 @@
 
   &__item {
     position: relative;
-    border-radius: 20px;
+    border-radius: $border-radius-base;
     transition: 0.5s;
     height: 100%;
     overflow: hidden;
