@@ -20,25 +20,32 @@ footer {
 
 }
 
+.footer {
 
-.footer-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  width: 100%;
-  min-height: 139px;
-}
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.footer-social {
-  display: flex;
-  justify-content: flex-end;
+  &__bottom {
+    background-color: darken($primary, 10%);
 
+    // border-top: 1px solid darken($primary, 10%);
+  }
 
-  svg {
-    fill: white;
-    width: 30px;
-    margin: 0 0 0 16px;
+  &__left {}
+
+  &__right {
+
+    display: flex;
+    align-items: center;
+
+    svg {
+      fill: white;
+      width: 30px;
+      margin: 0 0 0 16px;
+    }
   }
 
 }
