@@ -91,6 +91,7 @@
     height: 100%;
     overflow: hidden;
 
+
     &:hover {
       box-shadow: 0px 16px 24px rgba(8, 35, 48, 0.16);
       cursor: pointer;
@@ -100,6 +101,8 @@
 
   &__foto {
     height: 100%;
+    background-color: $primary;
+
     img {
       display: block;
       width: 100%;

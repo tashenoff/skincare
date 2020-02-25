@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px;
+  background-color: $primary;
 
   h2 {
     color: #fff;
@@ -102,17 +103,17 @@
       left: 100%
     }
 
-// &::after {
-//   content: "";
-//   display: block;
-//   border: radius 50%;
-//   width: 20px;
-//   height: 20px;
-//   background-color: #fff;
+    // &::after {
+    //   content: "";
+    //   display: block;
+    //   border: radius 50%;
+    //   width: 20px;
+    //   height: 20px;
+    //   background-color: #fff;
 
-//   position: absolute;
-//   margin-left: calc(100% - 10px);
-// }
+    //   position: absolute;
+    //   margin-left: calc(100% - 10px);
+    // }
 
     &:last-child::after {
       display: none;
