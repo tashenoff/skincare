@@ -13,7 +13,7 @@
   display: block;
   text-align: center;
   border: none;
-  max-width: 400px;
+  
   white-space: nowrap;
 }
 
@@ -41,7 +41,10 @@
 .btn-primary {
   background-color: $primary;
   color: #fff;
+  max-width: 400px;
 }
+
+
 
 .btn-primary:hover {
   background-color: darken($primary, 10%);

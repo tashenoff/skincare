@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Главная страница</title>
+        {% include 'templates/head.html' %}
+    </head>
+    <body>
+        <div id="example" class="main">
+
+            <div id="space-navbar-fixed" class="banner banner--cat banner--anima">
+                <div class="container">
+                    <div class="row">
+                        <div class="banner__wrapper">
+                            <div class="banner__content">
+                                <h1 class="border__title border__title--white">Контакты</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <section>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col col-6">
+                            <div class="block__content block">
+                                <form action="/action_page.php" class="test">
+                                    <label class="modal__field" for="fname">Ваше имя</label>
+                                    <input class="modal__field" type="text" id="fname" name="firstname" placeholder="Нурсултан">
+
+                                    <label class="modal__field">Номер телефона</label>
+                                    <input type="text" id="lname" name="lastname" placeholder="+7 (__)___ __ __">
+                                    <label class="modal__field">Ваше сообщение:</label>
+                                    <textarea rows="10" cols="45" name="text"></textarea>
+                                    <div class="btn btn-primary">Заказать</div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <div class="col col-6">
+                            <div class="block__content block">
+                                <p class="block__title">Адрес:</p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum blanditiis sequi vel ea corrupti voluptatibus nisi quam cupiditate provident ut. Id ducimus dolores incidunt nam delectus earum error nisi molestias. 
+                        </div>
+
+                            <div class="block__content block">
+                                <p class="block__title">Реквизиты:</p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum blanditiis sequi vel ea corrupti voluptatibus nisi quam cupiditate provident ut. Id ducimus dolores incidunt nam delectus earum error nisi molestias. 
+                        </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% include 'templates/footer.html' %}
+    </div>
+</body>
+</html>
