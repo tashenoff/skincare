@@ -31,8 +31,12 @@
     left: auto;
     margin-right: auto;
     margin-left: auto;
-    max-width: 500px;
+    max-width: 470px;
     margin: 1.75rem auto;
+
+    @include mq(max, $BP-mobile) {
+      max-width: 95%;
+    }
   }
 
   &__content {
