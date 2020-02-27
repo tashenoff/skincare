@@ -13,8 +13,15 @@
   display: block;
   text-align: center;
   border-color: lighten($primary, 10%);
-
+  max-width: 400px;
   white-space: nowrap;
+
+  @include mq(max $BP-mobile) {
+    font-size: 12px;
+  }
+
+
+
 }
 
 .btn-outline {
@@ -41,7 +48,11 @@
 .btn-primary {
   background-color: $primary;
   color: #fff;
-  max-width: 400px;
+
+
+  @include mq(max $BP-mobile) {
+    max-width: 320px;
+  }
 }
 
 

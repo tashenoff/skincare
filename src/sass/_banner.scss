@@ -9,6 +9,10 @@
 
     p {
         max-width: 80%;
+
+        @include mq(max $BP-mobile) {
+            max-width: 100%;
+        }
     }
 
 }
@@ -44,6 +48,12 @@
         height: 85vh;
         position: relative;
 
+        @include mq(max $BP-mobile) {
+            height: 95vh;
+            background-position: right;
+
+        }
+
         &:after {
             content: '';
             display: block;
@@ -61,6 +71,10 @@
             margin: 40px 18px;
             line-height: 1.5rem;
             // font-size: 20px;
+
+            @include mq(max $BP-mobile) {
+                margin: 28px 18px;
+            }
         }
     }
 
@@ -106,7 +120,7 @@
     &--landing {
 
         color: #fff;
-        height: 50vh;
+        height: 80vh;
 
 
         p {
@@ -129,11 +143,18 @@
         padding: 15px;
 
         h1 {
-            padding: 40px 0;
+            padding: 10px 0;
             line-height: $base-line-height*2;
             text-transform: uppercase;
             letter-spacing: 2px;
             ;
+
+
+            @include mq(max $BP-mobile) {
+                padding: 16px 0;
+                font-size: 18px;
+                line-height: $base-line-height*1.2;
+            }
         }
 
 

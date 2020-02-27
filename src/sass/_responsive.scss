@@ -18,8 +18,22 @@
 
 }
 
+.row-reverse {
+
+    @include mq(max $BP-mobile) {
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: flex-end;
+    }
+
+}
+
 .col-12 {
     width: calc(100% - #{$gutters*2});
+
+    @include mq(max $BP-mobile) {
+        width: 100%;
+    }
 }
 
 .col {
@@ -32,17 +46,25 @@
     width: 50%;
 
     @include mq(max $BP-mobile) {
-        width: calc(100% - #{$gutters});
+        width: 100%;
     }
 }
 
 
 .col-8 {
     width: 66.667%;
+
+    @include mq(max $BP-mobile) {
+        width: calc(100% - #{$gutters});
+    }
 }
 
 .col-3 {
     width: 25%;
+
+    @include mq(max $BP-mobile) {
+        width: calc(50% - #{$gutters});
+    }
 
 }
 

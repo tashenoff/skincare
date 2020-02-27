@@ -4,4 +4,8 @@
     text-transform: uppercase;
     letter-spacing: 2px;
 
+    @include mq(max $BP-mobile) {
+        line-height: $base-line-height*1.5;
+    }
+
 }

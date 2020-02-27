@@ -101,6 +101,10 @@
       width: 200px;
       position: absolute;
       left: 101%;
+
+      @include mq(max $BP-mobile) {
+        display: none;
+      }
     }
 
     // &::after {

@@ -27,6 +27,8 @@
 
   &--fixed {
     position: fixed;
+
+
     width: 100%;
     top: 0;
     background-color: #fff;
@@ -80,7 +82,7 @@
   &__item {
     padding: 20px;
 
-    width: calc(100% / 4);
+    // width: calc(100% / 4);
     display: flex;
     letter-spacing: 1px;
     justify-content: center;
