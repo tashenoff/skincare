@@ -34,6 +34,13 @@ window.onscroll = function() {
   scrollFunction();
 };
 
+function ScrollDown() {
+  document.getElementById('start').scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  });
+}
+
 function scrollFunction() {
   if (
     document.body.scrollTop > 180 ||
