@@ -1,6 +1,7 @@
 @import '_mixins';
-@import "./node_modules/mq-scss/mq";
+@import './node_modules/mq-scss/mq';
 @import '_variables';
+@import './node_modules/hamburgers/_sass/hamburgers/hamburgers';
 @import '_animations';
 @import '_responsive';
 @import 'buttons';
@@ -29,7 +30,5 @@
 @import 'form';
 @import 'block';
 @import 'contact';
-
-
 
 // @import "./node_modules/hamburgers/_sass/hamburgers/hamburgers"; //шаги

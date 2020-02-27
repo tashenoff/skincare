@@ -1,19 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Russo+One&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-$base-font-family: "Roboto",
-sans-serif;
-$font-heading: "Russo One",
-sans-serif;
+$base-font-family: 'Roboto', sans-serif;
+$font-heading: 'Russo One', sans-serif;
 $max-width-container: 1140px;
-
-
-$gutters: 15px;
-
 
 $primary: #6ba6ea;
 $secondary: #55eb9e;
 $base-font-color: #3e4345;
+
+$gutters: 15px;
+$hamburger-layer-color: $primary;
+$hamburger-active-layer-color: $hamburger-layer-color;
 
 $border-radius-base: 3px;
 

@@ -7,8 +7,28 @@ var close = document.getElementById('close');
 var open = document.getElementById('modal-open');
 var shadow = document.getElementById('example');
 var bgLayer = document.getElementById('bg_layer');
+var hamburger = document.querySelector('.hamburger');
+var mobmenu = document.querySelector('.nav__right');
 
 // var body = document.body;
+
+hamburger.addEventListener('click', function() {
+  hamburger.classList.toggle('is-active');
+  mobmenu.classList.toggle('nav__right--visible');
+  if (hamburger.classList.contains('is-active')) {
+    // body.style.overflowY = 'hidden'; // body переменную переименуй, под какую нить осмысленную, типа wrapper
+    // body.style.position = 'fixed';
+    document.getElementById('bg_layer').style.display = 'block';
+    document.body.classList.add('modal-open');
+    shadow.classList.add('shadow-wrapper--active');
+  } else {
+    // body.style.overflowY = 'visible';
+    shadow.classList.remove('shadow-wrapper--active');
+    document.body.classList.remove('modal-open');
+    document.getElementById('bg_layer').removeAttribute('style');
+    // body.style.position = 'relative';
+  }
+});
 
 window.onscroll = function() {
   scrollFunction();
